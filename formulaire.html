@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+
+    <title>Formulaire</title>
+</head>
+<body style="background-color:darkgray">
+    <h1 style="margin-left: 40%; color:black;">Formulaire</h1><br>
+    <div class="container-fluild">
+        <div class="container">
+            <fieldset style="border:1px solid black; padding:10px;border-radius: 10px ;background: rgb(138, 180, 235)">
+                <div class="col-md-10 col-md-offset-1">
+                    <form id="formulaire" method="POST" action="formulaire.html">
+
+                      <div class="row">
+                          <div class="col">
+                              <label for="civ"> <span style="color:white;font-size: 30px">Civilité</span></label>
+                          </div>
+                          <div class="col">
+                                <select id="civ">
+                                    <option value="1">Aucun</option>
+                                    <option value="2">Monsieur</option>
+                                    <option value="3">Madame</option>
+                                    <option value="4">Mademoiselle</option>
+                                </select>
+                          </div>
+                          </div>
+                          <div class="row">
+                                <div class="col">
+                                    <label for="nom"> <span style="color:white;font-size: 30px">Nom</span></label>
+                                </div>
+                                <div class="col">
+                                    <input type="text" name="nom" id="nom" > <br>
+                                    <span id="nomErreur"></span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                    <div class="col">
+                                        <label for="prenom"> <span style="color:white;font-size: 30px">Prénoms</span></label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" name="prenom" id="prenom" >
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                        <div class="col">
+                                            <label for="adresse"> <span style="color:white;font-size: 30px">Adresse</span></label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" name="adresse" id="adresse" >
+                                        </div>
+                                </div>
+
+                                
+                                <div class="row">
+                                        <div class="col">
+                                            <label for="ville"> <span style="color:white;font-size: 30px">Ville</span></label>
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" name="ville" id="ville" >
+                                        </div>
+                                </div>
+
+                                <div class="row">
+                                        <div class="col-1">
+                                                <input type="checkbox" name="recevoir" id="recevoir" >
+                                            </div>
+                                        <div class="col">
+                                            <label for="recevoir"><span style="font-size:20px;">Recevoir la newstelle.</span></label>
+                                        </div>
+                                        
+                                        <div class="col-3">
+                                            <label for="courriel"><span style="font-size:20px;">Courriel</span></label>
+                                        </div>
+
+                                        <div class="col-3">
+                                             <input type="text" name="courriel" id="courriel" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input style="border-radius:5px;" id="envoyer" type="submit" value="Envoyer" name="envoyer">
+                                        </div>
+                                    </div>            
+                    </form>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    
+    <script src="verification.js"></script>   
+</body>
+</html>
