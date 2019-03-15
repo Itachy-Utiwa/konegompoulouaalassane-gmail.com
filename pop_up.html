@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pop  Up</title>
+</head>
+<body style="color:rgb(228, 222, 225)">
+    <div style="font-size:25px;color:deeppink;font-weight: lighter; margin-top: 0%;padding-top: 0%">
+        Cette fénêtre s'auto détruira dans 5 secondes!
+        <div style="color:rgb(253, 23, 69); text-align: center" id="time"></div>
+    </div>
+    <script>
+        var time = document.getElementById('time');
+        var count = 5;
+var interval =setInterval(counter, 1000)
+function counter()
+{
+    if(count!=0){
+    time.innerHTML= --count;
+    
+    }
+    else{
+        window.close();
+    }
+}
+    </script>
+</body>
+</html>
