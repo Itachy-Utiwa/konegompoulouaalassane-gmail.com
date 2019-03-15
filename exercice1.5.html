@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Année Bissextille</title>
+</head>
+<body style="background-color:rgb(8, 156, 70);">
+
+    <h1 style="text-align:center;color:blue; font-size: 60px; border: 2px dotted orangered; background: paleturquoise">Année Bissextille</h1>
+    <input onmouseover="background: yellow;" style="font-size:50px;" id="annee" type="text" placeholder="Entrez une année">
+    <button style="font-size:50px;color:cadetblue;" onclick="isAnneeBissextille()" >Vérifiez</button><br> <br>
+    <div style="color:rgb(255, 255, 255);font-size:50px;" id="sortie"></div>
+
+    <script>
+    var annee = document.getElementById('annee');
+    var sortie = document.getElementById('sortie');
+
+    function isAnneeBissextille()
+{
+    
+    if((Number(annee.value))%4==0 || (Number(annee.value))%400==400)
+    {
+        sortie.innerHTML+= annee.value +' est une année Bissextille'+'<br>';
+    }
+    else
+    {
+        sortie.innerHTML+="Désolé l'année "+ annee.value +" n'est pas une année Bissextille"+'<br>';
+    }
+}
+    </script>
+    <!-- <script src="script2.js"></script> -->
+</body>
+</html>
